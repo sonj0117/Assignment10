@@ -7,32 +7,23 @@ header {
 
   
     nav {
-      width: 100%;
+      width: auto;
       background-color: #f4f4f4; /* Background color */
-    }
-  
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
   
-    nav ul li {
-      margin: 0 5px; /* Small space between links */
-      width: auto; /* Adjust width if needed */
-    }
   
-    nav ul li a {
+   
+  
+    nav a {
       display: block;
       padding: 10px 20px; /* Adjust the size of the links */
       text-decoration: none;
       text-align: center; /* Center text */
-      color: #333; /* Text color */
     }
   
-    nav ul li a:hover {
+    nav a:hover {
       background-color: #ddd; /* Hover background color */
     }
 
@@ -89,6 +80,8 @@ a:hover {
     min-height: 100px;
     background-color: #DED1BD;
     color: #683B2B;
+    margin-left: 200px;
+    padding-left: 2em;
 }
 
   body {
@@ -100,29 +93,40 @@ a:hover {
   nav {
     width: 200px;
     background-color: #f4f4f3; /* Background color */
-  }
-  
-  nav ul {
-    list-style-type: none;
     padding: 0;
     margin: 0;
     display: block;
   }
-  
-  nav ul li {
-    margin-bottom: 10px; /* Vertical space between links */
-  }
-  
-  nav ul li a {
+
+  nav a {
     text-decoration: none;
     text-align: center; /* Center text */
-    color: #333; /* Text color */
   }
   
-  nav ul li a:hover {
-    background-color: #ddd; /* Hover background color */
-  }
-  
+/*sidebar css */
+.navcontainer {
+  height: 100vh; /* 100% Full-height */
+  position: fixed; /* Stay in place */
+  width: 200px;
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #f4f4f3; /* Background color */
+  padding: 0.4rem 0.8rem
+}
+
+/* ensure that maincontainer works alongside side bar*/
+.maincontainer {
+  height: 100vh;
+  overflow: scroll;
+  padding: 2em;
+  margin-left: 200px;
+  position: relative;
+  top: 0;
+  left: 0
 
 }
+
+
+}
+
 

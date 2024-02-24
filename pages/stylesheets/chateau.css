@@ -23,10 +23,24 @@ color:  #8B4513;
 
 }
 
+.sponsor {
+  width: 100px
+}
 
 nav {
   width: 100%;
   background-color: #f4f4f4; /* Background color */
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px; /* Adjust the size of the links */
+  text-decoration: none;
+  text-align: center; /* Center text */
+}
+
+nav a:hover {
+  background-color: #ddd; /* Hover background color */
 }
 
 nav ul {
@@ -37,22 +51,6 @@ nav ul {
   justify-content: space-around;
 }
 
-nav ul li {
-  margin: 0 5px; /* Small space between links */
-  width: auto; /* Adjust width if needed */
-}
-
-nav ul li a {
-  display: block;
-  padding: 10px 20px; /* Adjust the size of the links */
-  text-decoration: none;
-  text-align: center; /* Center text */
-  color: #333; /* Text color */
-}
-
-nav ul li a:hover {
-  background-color: #ddd; /* Hover background color */
-}
 
 a:link {
   color: #808000;
@@ -66,6 +64,21 @@ a:visited {
 /* mouse over link */
 a:hover {
   color:  #F48882;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.list{
+  text-align: center;
+}
+ol {
+  display: inline-block;
+  text-align: left;
 }
 
 figure{
@@ -129,6 +142,8 @@ background-image: url(/images/LogoLarge.png);
 min-height: 100px;
 background-color:  #DED1BD;
 color:  #683B2B;
+margin-left: 200px;
+padding-left: 2em;
 }
 
 .row
@@ -171,30 +186,44 @@ div dl dd{
   padding: 10px
 }
 
+
 nav {
   width: 200px;
   background-color: #f4f4f3; /* Background color */
-}
-
-nav ul {
-  list-style-type: none;
   padding: 0;
   margin: 0;
   display: block;
 }
 
-nav ul li {
-  margin-bottom: 10px; /* Vertical space between links */
-}
-
-nav ul li a {
+nav a {
   text-decoration: none;
   text-align: center; /* Center text */
-  color: #333; /* Text color */
 }
 
-nav ul li a:hover {
-  background-color: #ddd; /* Hover background color */
+.navcontainer {
+  height: 100vh; /* 100% Full-height */
+  position: fixed; /* Stay in place */
+  width: 200px;
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #f4f4f3; /* Background color */
+  padding: 0.4rem 0.8rem
+}
+
+.maincontainer {
+  height: 100vh;
+  overflow: scroll;
+  padding: 2em;
+  margin-left: 200px;
+  position: relative;
+  top: 0;
+  left: 0
+}
+
+.responsive {
+  margin-left: 200px; 
+  text-align: center;
+  display: block;
 }
 
 }
