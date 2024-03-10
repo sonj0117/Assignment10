@@ -140,7 +140,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
   grid-auto-rows: minmax(100px, auto); /* Adjust for smaller screens */
-  gap: 2px;
 }
 
 .wide {
