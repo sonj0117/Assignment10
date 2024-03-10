@@ -135,96 +135,153 @@ footer {
   padding: 20px; /* Add padding for spacing */
 }
 
+/*image grid css for small screen*/ 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+  grid-auto-rows: minmax(100px, auto); /* Adjust for smaller screens */
+  gap: 5px;
+}
+
+.wide {
+  grid-column: span 2;
+  height: 150px; 
+  background-size: cover;
+  background-position: center;
+}
+
+.long {
+  grid-row: span 2;
+  height: 300px; 
+  background-size: cover;
+  background-position: center;
+}
+
+.square {
+  grid-column: span 1;
+  height: 150px; 
+  background-size: cover;
+  background-position: center;
+}
+
 @media screen and (min-width: 480px) {
 
-header {
-background-image: url(/images/LogoLarge.png);
-min-height: 100px;
-background-color:  #DED1BD;
-color:  #683B2B;
-margin-left: 200px;
-padding-left: 2em;
-}
-
-.row
-{
-  display: flex;
-}
-
-.column {
-  flex: 50%; /* Each column takes up 50% of the width */
-  padding: 10px; /* Add some padding */
-}
-
-.columnleft {
-  order: 0;
-}
-
-.columnright {
-  order: 1;
-}
-
-body {
-background-color: #faf6f2;
-color:  #8B4513;
-font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-figure{
-  width: 150px
-}
-
-aside {
-  padding: 20px; 
-}
-
-.lists {
-  padding:10px
-}
-
-div dl dd{
-  padding: 10px
-}
-
-
-nav {
-  width: 200px;
-  background-color: #f4f4f3; /* Background color */
-  padding: 0;
-  margin: 0;
-  display: block;
-}
-
-nav a {
-  text-decoration: none;
-  text-align: center; /* Center text */
-}
-
-.navcontainer {
-  height: 100vh; /* 100% Full-height */
-  position: fixed; /* Stay in place */
-  width: 200px;
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #f4f4f3; /* Background color */
-  padding: 0.4rem 0.8rem
-}
-
-.maincontainer {
-  height: 100vh;
-  overflow: scroll;
-  padding: 2em;
+  header {
+  background-image: url(/images/LogoLarge.png);
+  min-height: 100px;
+  background-color:  #DED1BD;
+  color:  #683B2B;
   margin-left: 200px;
-  position: relative;
-  top: 0;
-  left: 0
+  padding-left: 2em;
+  }
+  
+  .row
+  {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%; /* Each column takes up 50% of the width */
+    padding: 10px; /* Add some padding */
+  }
+  
+  .columnleft {
+    order: 0;
+  }
+  
+  .columnright {
+    order: 1;
+  }
+  
+  body {
+  background-color: #faf6f2;
+  color:  #8B4513;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  figure{
+    width: 150px
+  }
+  
+  aside {
+    padding: 20px; 
+  }
+  
+  .lists {
+    padding:10px
+  }
+  
+  div dl dd{
+    padding: 10px
+  }
+  
+  nav {
+    width: 200px;
+    background-color: #f4f4f3; /* Background color */
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+  
+  nav a {
+    text-decoration: none;
+    text-align: center; /* Center text */
+  }
+  
+  .navcontainer {
+    height: 100vh; /* 100% Full-height */
+    position: fixed; /* Stay in place */
+    width: 200px;
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #f4f4f3; /* Background color */
+    padding: 0.4rem 0.8rem
+  }
+  
+  .maincontainer {
+    height: 100vh;
+    overflow: scroll;
+    padding: 2em;
+    margin-left: 200px;
+    position: relative;
+    top: 0;
+    left: 0
+  }
+  
+  .responsive {
+    margin-left: 200px; 
+    text-align: center;
+    display: block;
+  }
+/* Grid container starts here*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); /*to auto reduce the size of columns*/
+    grid-auto-rows: minmax(100px, auto); 
+    margin-left: 200px;
 }
 
-.responsive {
-  margin-left: 200px; 
-  text-align: center;
-  display: block;
-}
+.wide {
+    grid-column: span 2;
+    height: 300px; 
 
 }
+
+.long {
+    grid-row: span 2;
+    height: 600px; 
+   
+}
+
+.square {
+    grid-column: span 1;
+    height: 300px;
+    
+}
+
+  
+  }
+  
+  
+
 
