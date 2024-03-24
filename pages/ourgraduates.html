@@ -29,12 +29,12 @@
 <main> <!-- main is used for main contants of the page-->
 <div class="grid-container"> <!-- will be used for image grid-->
     
-    <img src="../images/LongDiplomadog.png" class="long">
-    <img src="../images/SquareAndtheCat.png" class="square">
-    <img src="../images/SquareBeagle.jpg" class="square">
-    <img src="../images/WideWithOwner.jpg" class="wide">
-    <img src="../images/SquarePomeranian.jpg" class="square">
-    <img src="../images/SquareHusky.jpg" class="square">
+    <img src="../images/LongDiplomadog.png" alt="long" class="long">
+    <img src="../images/SquareAndtheCat.png" alt="square" class="square">
+    <img src="../images/SquareBeagle.jpg" alt="square" class="square">
+    <img src="../images/WideWithOwner.jpg" alt="wide" class="wide">
+    <img src="../images/SquarePomeranian.jpg" alt="square" class="square">
+    <img src="../images/SquareHusky.jpg" alt="square" class="square">
    
 
 </div>
@@ -48,8 +48,11 @@
         <br>
         <a href="mailto:son.j@northeastern.edu">son.j@northeastern.edu</a>
     </p>
+    <p>Current Date: <span id="currentDate"></span></p>
+    <script>
+        document.getElementById('currentDate').innerText = new Date();
+    </script>
    </footer>
-</div>
 </body>
 
 

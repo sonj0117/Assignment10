@@ -135,6 +135,45 @@ footer {
   padding: 20px; /* Add padding for spacing */
 }
 
+fieldset {
+  margin: 2em 0;
+  padding: 1em 2em; 
+  border: solid 1px;
+  border-radius: 6px;
+  min-width: 200px;
+background-color: #F3E2E3;
+}
+
+legend {
+  font-size: 1.25em;
+  padding: 0 .25em; 
+}
+
+
+label {
+  display: block;
+  margin-top: 1em;
+}
+label:first-of-type {
+  margin-top: 0;
+}
+
+input {
+  padding: .5em;
+  border: solid 1px; 
+}
+
+input [type="email"],[type="name"] {
+  width: 15em; 
+  border: #683B2B;
+}
+
+textarea {
+  min-height: 8em;
+  min-width: 100%;
+  padding: .5em;
+  border: solid 1px #683B2B;
+}
 /*image grid css for small screen*/ 
 .grid-container {
   display: grid;
@@ -276,6 +315,16 @@ footer {
     grid-column: span 1;
     height: 300px;
     
+}
+
+legend {
+  font-size: 1.75em;
+}
+
+fieldset {
+  width: 50%;
+  min-width: 320px;
+  margin: auto;
 }
 
   
