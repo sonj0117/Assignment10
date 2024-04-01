@@ -1,5 +1,5 @@
 header {
-        background-image: url(/images/LogoSmall.png);
+        background-image: url(../images/LogoSmall.png);
         min-height: 50px;
         background-position:right top; 
         background-repeat: no-repeat;
@@ -82,7 +82,7 @@ video {
 
 @media screen and (min-width: 480px) {
   header {
-    background-image: url(/images/LogoLarge.png);
+    background-image: url(../images/LogoLarge.png);
     min-height: 100px;
     background-color: #DED1BD;
     color: #683B2B;
