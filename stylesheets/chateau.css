@@ -73,6 +73,12 @@ a:hover {
   height: auto;
 }
 
+video {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* Ensures the video doesn't exceed the container width */
+}
+
 
 @media screen and (min-width: 480px) {
   header {
@@ -125,7 +131,11 @@ a:hover {
   left: 0
 
 }
-
+/*media for large screen*/
+video {
+  width: 80%; /* Example width for large screens */
+  height: 400px;
+}
 
 }
 
